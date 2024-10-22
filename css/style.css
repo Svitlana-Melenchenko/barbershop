@@ -1,10 +1,17 @@
 :root {
-    --font-family: , sans-serif;
-
-   --main-color: ;
-   --second-color: ;
-   --light-grey: ;
-   }
+   /* font */
+   --font-family: "Open+Sans", sans-serif;
+   --second-family: "Raleway", sans-serif;
+   /* color */
+   --main-color:#303030;
+   --bright-color:#FFFFFF;
+   --accent-color:#FF6C00; 
+   --auxiliary-color:#9DA4BD;
+   --light-color:#555555;
+   /* bg color */
+   --bg-light-color:#F7F7F7;
+   --bg-dark:#111319;
+    }
 
 h1,
 h2,
@@ -14,16 +21,7 @@ p {
 a {
    text-decoration: none;
 }
-body {
-   font-family: var(--font-family);
-   font-weight: 500;
-   font-size: 18px;
-   color: ;
-   background-color: ;
-   max-width: 1470px;
-   padding: 0 15px;
-   margin:0 auto 0 auto;
-}
+
    /* height: 100vh;  */
 
 
@@ -41,6 +39,36 @@ body {
    clip: rect(0 0 0 0);   
    overflow: hidden;
  }
-
-
 /* =========================================================== */
+ /* common classes */
+ body {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.67;
+   letter-spacing: 0.02em;
+   color: var(--light-color);
+   background-color:rgb(194, 190, 190); 
+   max-width: 1630px;
+   padding: 0 15px;
+   margin:0 auto 0 auto;
+}
+
+ .suptitle{
+   font-weight: 600;
+   font-size: 11px;
+   line-height: 1.36;
+   text-transform: uppercase;
+    }
+ .title{
+   font-family: var(--second-family);
+   font-weight: 700;
+   font-size: 42px;
+   line-height: 1.17;
+   letter-spacing: 0.05em;
+   }
+/* =========================================================== */
+/* Header */
+
+
+
