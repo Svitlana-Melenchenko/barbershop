@@ -1,74 +1,203 @@
 :root {
-   /* font */
-   --font-family: "Open+Sans", sans-serif;
-   --second-family: "Raleway", sans-serif;
-   /* color */
-   --main-color:#303030;
-   --bright-color:#FFFFFF;
-   --accent-color:#FF6C00; 
-   --auxiliary-color:#9DA4BD;
-   --light-color:#555555;
-   /* bg color */
-   --bg-light-color:#F7F7F7;
-   --bg-dark:#111319;
-    }
+  /* font */
+  --font-family: "Open+Sans", sans-serif;
+  --second-family: "Raleway", sans-serif;
+  /* color */
+  --main-color: #303030;
+  --bright-color: #ffffff;
+  --accent-color: #ff6c00;
+  --auxiliary-color: #9da4bd;
+  --light-color: #555555;
 
+  --gray-col: #rgb(157, 164, 189);
+  --gray-col-60: #rgba(157, 164, 189, 0.6);
+  /* bg color */
+  --bg-light-color: #f7f7f7;
+  --bg-dark: #111319;
+}
+/* -==================================================reset start */
 h1,
 h2,
+h3,
+h4,
+h5,
+h6,
 p {
-   margin: 0;
+  margin: 0;
 }
 a {
-   text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+button {
+  cursor: pointer;
 }
 
-   /* height: 100vh;  */
+/* height: 100vh;  */
 
-
-   /* Hidden title */
+/* Hidden title */
 .visually-hidden {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
- 
-   white-space: nowrap;
-   clip-path: inset(100%);
-   clip: rect(0 0 0 0);   
-   overflow: hidden;
- }
-/* =========================================================== */
- /* common classes */
- body {
-   font-family: var(--font-family);
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 1.67;
-   letter-spacing: 0.02em;
-   color: var(--light-color);
-   background-color:rgb(194, 190, 190); 
-   max-width: 1630px;
-   padding: 0 15px;
-   margin:0 auto 0 auto;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* =========================================================== common classes*/
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+  background-color: rgb(194, 190, 190);
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto 0 auto;
+}
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.saptitle-light {
+  color: var(--gray-col-60);
+}
+.title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
 }
 
- .suptitle{
-   font-weight: 600;
-   font-size: 11px;
-   line-height: 1.36;
-   text-transform: uppercase;
-    }
- .title{
-   font-family: var(--second-family);
-   font-weight: 700;
-   font-size: 42px;
-   line-height: 1.17;
-   letter-spacing: 0.05em;
-   }
+.btn {
+  min-width: 160px;
+  min-height: 40px;
+  /* в макеті враховується і border, тобто не забувати віднімати по 1px */
+  padding: 11px 19px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--accent-color);
+}
+.btn-light {
+  color: var(--bright-color);
+}
 /* =========================================================== */
-/* Header */
+/*============================================================= Header */
+.header {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: var(--bg-dark);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 124px;
+}
+.header-logo-img {
+}
 
+.nav {
+  margin-right: auto;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-menu {
+}
+.nav-link,
+.header-tel {
+  display: block;
 
+  /* щоб зручно клікати користувачу */
+  padding: 30px 0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
 
+  color: var(--bright-color);
+}
+.nav-link:hover,
+.nav-link:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  margin-right: 40px;
+}
+.header-btn {
+}
+
+/* ======================================================Hero */
+.hero {
+  background-color: var(--bg-dark);
+}
+.container {
+}
+.hero-menu {
+}
+.hero-menu-item {
+}
+.hero-menu-link {
+}
+.hero-sup {
+}
+.hero-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 118%;
+  letter-spacing: 0.05em;
+  color: var(--bright-color);
+}
+.hero-text {
+}
+.hero-slider {
+}
+.hero-slider-item {
+}
+.hero-slider-btn {
+}
