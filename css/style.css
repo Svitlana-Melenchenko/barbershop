@@ -14,6 +14,9 @@
   /* bg color */
   --bg-light-color: #f7f7f7;
   --bg-dark: #111319;
+
+  --indent: 30px;
+  --items: 3;
 }
 /* -==================================================reset start */
 h1,
@@ -31,8 +34,8 @@ a {
 }
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  /* max-width: 100%;
+  height: auto; */
 }
 ul,
 ol {
@@ -77,20 +80,30 @@ body {
   margin: 0 auto 0 auto;
 }
 .suptitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase;
+  color: var(--main-color);
 }
-.saptitle-light {
+.suptitle-light {
   color: var(--gray-col-60);
 }
 .title {
+  margin-bottom: 20px;
+
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
+  color: var(--main-color);
+}
+.title-light {
+  margin-bottom: 44px;
+  color: var(--bright-color);
 }
 
 .btn {
@@ -113,10 +126,19 @@ body {
 }
 .btn:hover,
 .btn:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--bright-color);
 }
 .btn-light {
   color: var(--bright-color);
+}
+.section {
+  padding: 120px 0;
+}
+
+.card-set {
+}
+.card-set-item {
 }
 /* =========================================================== */
 /*============================================================= Header */
@@ -189,7 +211,7 @@ body {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 72px;
-  line-height: 118%;
+  line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--bright-color);
 }
@@ -201,3 +223,110 @@ body {
 }
 .hero-slider-btn {
 }
+/* =======================================================About */
+.about {
+}
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+.about-list-li {
+}
+.about-list-img {
+}
+.about-right-side {
+  max-width: 470px;
+}
+
+.about-sup {
+}
+.suptitle {
+}
+.about-title {
+}
+.title {
+}
+.about-heading {
+  margin-bottom: 20px;
+}
+.about-text {
+  margin-bottom: 42px;
+  font-size: 14px;
+  line-height: 1.86;
+}
+.about-btn {
+}
+.btn {
+}
+
+/* ===================================================================Price */
+.price {
+  background-color: var(--bg-dark);
+}
+.section {
+}
+.container {
+}
+.price-sub {
+}
+.saptitle-light {
+}
+.saptitle {
+}
+.title {
+}
+.price-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
+.price-item {
+}
+.price-submenu {
+  width: 570px;
+  padding: 30px 20px;
+}
+.price-subitem {
+  color: var(--auxiliary-color);
+}
+.price-subitem:not(:last-child) {
+  margin-bottom: 20px;
+}
+.price-btn {
+  display: block;
+  margin: 0 auto;
+}
+.btn {
+}
+/* ================================================================Why */
+.why {
+}
+.container {
+}
+.why-list {
+}
+.why-items {
+}
+.why-items-sum {
+}
+.why-pl {
+}
+.why-items-text {
+}
+.why-suptitle {
+}
+.saptitle {
+}
+.why-title {
+}
+.title {
+}
+.why-text {
+}
+/* ========================================================== */
