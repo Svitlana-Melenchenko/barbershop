@@ -72,7 +72,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--light-color);
-  background-color: rgb(194, 190, 190);
+  background-color: var(--bright-color);
 }
 .container {
   max-width: 1200px;
@@ -137,8 +137,12 @@ body {
 }
 
 .card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
 }
 .card-set-item {
+  flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
 }
 /* =========================================================== */
 /*============================================================= Header */
@@ -329,4 +333,100 @@ body {
 }
 .why-text {
 }
-/* ========================================================== */
+/* ==========================================================Тeam */
+.team {
+  background-color: #f7f7f7;
+}
+
+.tean-sup {
+}
+
+.team-list {
+}
+.team-card {
+}
+.team-card-img {
+}
+.team-card-name {
+}
+.team-card-text {
+}
+.team-card-list {
+}
+.team-card-soc {
+}
+.team-card-svg {
+}
+/* =================================================== Gallery*/
+.gallery {
+}
+.gallery-suptitle {
+}
+.gallery-list {
+  --items: 4;
+}
+.gallery-item {
+}
+.gallery-item-img {
+}
+
+/* =================================================== Booking*/
+.booking-contacts-wrapper {
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--bg-dark);
+  background-image: url(../img/contacts/bg-contacts.png);
+  background-repeat: no-repeat;
+  /* ставимо картинку 50%-центр + додаємо розмір половини картинки, зміщуя її + відступ за макетом */
+  background-position: top left calc(50% + 393px + 15px);
+}
+
+.booking {
+  flex-basis: 570px;
+}
+.section {
+}
+.container {
+}
+.booking-title {
+}
+.title {
+}
+.title-light {
+}
+
+/* ==================================================== Contacts*/
+.contacts {
+  flex-basis: 570px;
+  padding-left: 100px;
+}
+
+.contacts-title {
+}
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-style: normal;
+  color: var(--auxiliary-color);
+  margin-bottom: 72px;
+}
+.contacts-add {
+  font-weight: 700;
+}
+.contacts-tel {
+}
+.contacts-email {
+}
+.contacts-working {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 136%;
+  text-transform: uppercase;
+  color: var(--gray-col);
+  margin-bottom: 20px;
+}
+.contacts-time {
+  color: var(--auxiliary-color);
+}
